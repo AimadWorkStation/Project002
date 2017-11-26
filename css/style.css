@@ -45,7 +45,84 @@ header li
 }
 
 header #branding {
+	position: relative;
 	float: left;
+	-webkit-animation-name: branding;
+	        animation-name: branding;
+	-webkit-animation-duration: 5s;
+	        animation-duration: 5s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes branding {
+	0%{left:-1000px}
+	100%{left:0px}
+}
+
+@keyframes branding {
+	0%{left:-1000px}
+	100%{left:0px}
+}
+
+#branding .highlight2 {
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 1s;
+	        transition-duration: 1s;
+}
+#branding .highlight {
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 1s;
+	        transition-duration: 1s;
+}
+#branding .highlight2:hover{
+	color : #00D2FF ;
+}
+#branding .highlight:hover{
+	color : #FFF43F ;
+}
+
+#showcase .container h1 {
+	position: relative;
+	 -webkit-animation: heading;
+	         animation: heading;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes heading {
+  0%   {top: -100px;}
+  100% {top: 20px;}
+}
+@keyframes heading {
+  0%   {top: -100px;}
+  100% {top: 20px;}
+}
+
+#showcase .container #landing {
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+#showcase .container #landing:hover {
+	margin-bottom : 70px;
+}
+
+.box i{
+	-webkit-transition-property: -webkit-transform;
+	transition-property: -webkit-transform;
+	transition-property: transform;
+	transition-property: transform, -webkit-transform;
+	-webkit-transition-duration: 1s;
+	        transition-duration: 1s;
+}
+.box i:hover
+{
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
 }
 
 header #branding h1{
