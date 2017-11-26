@@ -166,6 +166,20 @@ article#main-col{
 	width: 65%;
 }
 
+
+ul#serices mo{
+	list-style: none;
+	padding: 20px;
+	border: #cccccc solid 1px;
+	margin-bottom: 5px;
+	background: #32a0c2
+}
+aside#sidebar input, aside#sidbar textarea {
+	width: 90%;
+	padding: 5px;
+}
+
+
 @media(max-width: 768px){
 	header #branding,
 	header nav,
@@ -189,7 +203,10 @@ article#main-col{
 		display: block;
 		width: 100%
 	}
-	#newsletter form input[type="email"]{
+	#newsletter form input[type="email"],
+	.contact input,
+	.contact textarea,
+	.contact label{
 		width: 100%;
 		margin-bottom: 5px;
 	}
