@@ -1,0 +1,2 @@
+this project has only html and css 
+it a simple 3 pages as introducing small compagni and their serices for exemple 
